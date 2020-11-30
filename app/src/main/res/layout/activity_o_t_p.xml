@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Otp_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:id="@+id/toolbar">
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/arrow"-->
+<!--                    android:layout_marginLeft="@dimen/dimen_10dp"-->
+<!--                    android:src="@drawable/ic_arrow_back_black_24dp"/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify Otp"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/dimen_20dp"/>
+            </androidx.appcompat.widget.Toolbar>
+
+<!--<androidx.cardview.widget.CardView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:id="@+id/linearlayout"-->
+<!--    android:layout_margin="@dimen/dimen_20dp"-->
+<!--    app:cardCornerRadius="@dimen/dimen_10dp"-->
+<!--    android:layout_below="@+id/toolbar"-->
+<!--    android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/et_reg_fname"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="@dimen/dimen_10dp"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:textColor="@color/dark_gray"-->
+<!--                    android:fontFamily="@font/lato_bold"-->
+<!--                    android:text="We will send as SMS with a confirmation code to this number"-->
+<!--                    android:textSize="@dimen/dimen_14sp" />-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvotpseond"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:text="8441042698"-->
+<!--                        android:fontFamily="@font/lato_regular"-->
+<!--                        android:textColor="#6E6C69"-->
+<!--                        android:textSize="@dimen/dimen_13sp" />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_toEndOf="@id/tvotpseond"-->
+<!--                        android:layout_marginLeft="@dimen/dimen_20dp"-->
+<!--                        android:paddingStart="@dimen/dimen_10dp"-->
+<!--                        android:paddingEnd="@dimen/dimen_10dp"-->
+<!--                        android:paddingTop="@dimen/dimen_3dp"-->
+<!--                        android:paddingBottom="@dimen/dimen_3dp"-->
+<!--                        android:textSize="@dimen/dimen_12dp"-->
+<!--                        android:fontFamily="@font/lato_regular"-->
+<!--                        android:drawableStart="@drawable/ic_edit_black_24dp"-->
+<!--                        android:background="@drawable/custom_button"-->
+<!--                        android:text="Edit" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvotpsecond"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:text="Enter otp"-->
+<!--                    android:layout_marginTop="@dimen/dimen_30dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:fontFamily="@font/lato_regular"-->
+<!--                    android:textColor="@color/dark_gray"-->
+<!--                    android:textSize="@dimen/dimen_13sp" />-->
+<!--                <com.poovam.pinedittextfield.SquarePinField-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:inputType="number"-->
+<!--                    android:textSize="@dimen/dimen_15dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:fontFamily="@font/lato_bold"-->
+<!--                    android:background="@drawable/whiteplane_background"-->
+<!--                    android:textSelectHandle="@drawable/text_handle"-->
+<!--                    android:id="@+id/squareField"-->
+<!--                    android:layout_marginTop="15dp"/>-->
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="@dimen/dimen_30dp"-->
+<!--                    android:layout_marginBottom="@dimen/dimen_30dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvotpsecon"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:text="00:30"-->
+<!--                        android:textColor="@color/dark_gray"-->
+<!--                        android:textSize="@dimen/dimen_14sp" />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_toEndOf="@+id/tvotpsecon"-->
+<!--                        android:layout_marginLeft="@dimen/dimen_20dp"-->
+<!--                        android:paddingStart="@dimen/dimen_10dp"-->
+<!--                        android:paddingEnd="@dimen/dimen_10dp"-->
+<!--                        android:paddingTop="@dimen/dimen_5dp"-->
+<!--                        android:fontFamily="@font/lato_regular"-->
+<!--                        android:paddingBottom="@dimen/dimen_5dp"-->
+<!--                        android:textSize="@dimen/dimen_12dp"-->
+<!--                        android:background="@drawable/custom_button"-->
+<!--                        android:text="Resend OTP" />-->
+<!--                </RelativeLayout>-->
+<!--                <Button-->
+<!--                    android:id="@+id/otp_verybutton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="Verify Otp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:fontFamily="@font/lato_bold"-->
+<!--                    android:background="@color/red_light"-->
+<!--                    android:textSize="@dimen/dimen_14sp"-->
+<!--                    android:textColor="@android:color/white"/>-->
+<!--            </LinearLayout>-->
+<!--       </androidx.cardview.widget.CardView>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="@dimen/dimen_10dp"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_below="@+id/linearlayout"-->
+<!--                android:layout_alignParentBottom="true">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Powered by "-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_gravity="center"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="60sp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@mipmap/deboxicon" />-->
+<!--            </LinearLayout>-->
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

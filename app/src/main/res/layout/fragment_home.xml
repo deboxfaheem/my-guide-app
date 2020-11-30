@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.guide.Fragments.Homefragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="@dimen/dimen_30dp"-->
+<!--            android:layout_marginTop="@dimen/dimen_30dp"-->
+<!--            android:layout_marginLeft="@dimen/dimen_20dp"-->
+<!--            android:src="@mipmap/sidebaricon"/>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/appLogo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="@dimen/dimen_15dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/dimen_100dp"-->
+<!--                android:layout_height="@dimen/dimen_60sp"-->
+<!--                android:textSize="@dimen/dimen_25sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@mipmap/guideiconhome"/>-->
+<!--        </LinearLayout>-->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/appLogo"
+            android:layout_marginTop="90dp"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appLogo"
+            android:layout_marginLeft="@dimen/dimen_16sp"
+            android:layout_marginRight="@dimen/dimen_16sp"
+            android:layout_marginBottom="@dimen/dimen_80dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/homefragment_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="November"
+                    android:textSize="@dimen/dimen_13sp"
+                    android:paddingTop="@dimen/dimen_14sp"
+                    android:paddingBottom="@dimen/dimen_15dp"
+                    android:id="@+id/date_DEL"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lato_bold"
+                    app:fontFamily="@font/lato_bold"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_10dp"
+                    android:layout_height="@dimen/dimen_10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/calender"
+                    android:layout_marginLeft="@dimen/dimen_7sp"
+                    android:layout_toRightOf="@id/date_DEL"
+                    android:src="@mipmap/dropdown"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/lato_regular"-->
+<!--                    android:text="Pending #3"-->
+<!--                    android:textColor="@color/dark_gray"-->
+<!--                    android:id="@+id/Pendingtxt"-->
+<!--                    android:layout_marginTop="@dimen/dimen_20dp"-->
+<!--                    android:layout_marginLeft="@dimen/dimen_15dp"-->
+<!--                    android:textSize="@dimen/dimen_12dp"-->
+<!--                    app:fontFamily="@font/lato_regular" />-->
+
+                <!--<ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/pinkdots"
+                    android:layout_below="@+id/Pendingtxt"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:src="@mipmap/pinkdot"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_below="@+id/pinkdots"
+                    android:src="@mipmap/line1"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/lato_regular"-->
+<!--                    android:text="Total Assigned #10"-->
+<!--                    android:textColor="@color/dark_gray"-->
+<!--                    android:id="@+id/totalassig"-->
+<!--                    android:layout_marginTop="@dimen/dimen_20dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:textSize="@dimen/dimen_12dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    app:fontFamily="@font/lato_regular" />-->
+
+                <!-- <ImageView
+                     android:layout_width="10dp"
+                     android:layout_height="10dp"
+                     android:id="@+id/pinkdots2"
+                     android:layout_alignParentRight="true"
+                     android:layout_below="@id/totalassig"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginRight="44dp"
+                     android:src="@mipmap/pinkdot"/>
+                 <ImageView
+                     android:layout_width="145dp"
+                     android:layout_height="93dp"
+                     android:layout_below="@+id/pinkdots"
+                     android:layout_alignParentRight="true"
+                     android:src="@mipmap/line2"/>-->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/dimen_20dp"
+                 android:id="@+id/linerlayout"
+                 android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/homeiconboar"/>
+             </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="3"
+                    android:id="@+id/three"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/dimen_40dp"
+                    android:layout_below="@+id/linerlayout"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:gravity="center_horizontal"
+                    app:fontFamily="@font/lato_regular" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="/10"
+                    android:textColor="@color/red_light"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:layout_below="@+id/linerlayout"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:id="@+id/teen"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimen_60sp"
+                    app:fontFamily="@font/lato_bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Delivered"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_3dp"
+                    android:layout_below="@+id/teen"
+                    app:fontFamily="@font/lato_bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Next Tour on 11 Nov 2020 from 07:00 am"
+                    android:id="@+id/nextdelivery"
+                    android:textColor="@color/black"
+                    android:background="@drawable/next_deliverybackground"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:fontFamily="@font/lato_bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Taj Mahal - Agra fort"
+                    android:id="@+id/orderid"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:background="@drawable/tajmahal_agrabackground"
+                    android:layout_below="@+id/nextdelivery"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    app:fontFamily="@font/lato_bold" />
+                <ImageView
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_below="@id/orderid"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:id="@+id/cartdel"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:src="@mipmap/time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Duration: 07:00 am 11-11-2020 to 05:00 pm \n12-11-2020"
+                    android:id="@+id/time"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_below="@+id/orderid"
+                    android:layout_toRightOf="@id/cartdel"
+                    android:textSize="@dimen/dimen_10dp"
+                    app:fontFamily="@font/lato_regular" />
+      <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+          android:layout_marginTop="@dimen/dimen_10dp"
+          android:layout_marginRight="@dimen/dimen_16sp"
+          android:layout_below="@+id/orderid">
+          <ImageView
+              android:layout_width="@dimen/dimen_15dp"
+              android:layout_height="@dimen/dimen_15dp"
+              android:layout_below="@id/orderid"
+              android:layout_alignParentEnd="true"
+              android:layout_toStartOf="@+id/user"
+              android:src="@mipmap/usericon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Travelers: 15"
+                    android:id="@+id/user"
+                    android:layout_below="@+id/orderid"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="10dp"/>
+             </LinearLayout>
+                <ImageView
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_below="@+id/time"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:src="@mipmap/micicon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Tour Starts: The Oberoi Amarvilas Lobby, Taj East Gate Rd, Paktola, Tajganj, Agra"
+                    android:textColor="#7F8C8D"
+                    android:id="@+id/tourstarts"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_below="@+id/time"
+                    android:layout_toRightOf="@id/cartdel"
+                    android:textSize="10dp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_below="@+id/tourstarts"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:src="@mipmap/flag"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Tour Ends: Mankameshwar Temple, Sheb Bazar, Mantola, Agra"
+                    android:textColor="#7F8C8D"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_below="@+id/tourstarts"
+                    android:layout_toRightOf="@id/cartdel"
+                    android:textSize="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/dots_ll"-->
+<!--                    android:layout_marginTop="@dimen/dimen_3dp"-->
+<!--                    android:layout_marginLeft="@dimen/dimen_15dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/dimen_10dp"-->
+<!--                        android:layout_height="@dimen/dimen_10dp"-->
+<!--                        android:src="@mipmap/dotblue"/>-->
+<!--                   -->
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/dimen_10dp"-->
+<!--                        android:layout_height="@dimen/dimen_10dp"-->
+<!--                        android:src="@mipmap/dotredlight"/>-->
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:id="@+id/method_ll">
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Accept"-->
+<!--                        android:textColor="@color/green"-->
+<!--                        android:fontFamily="@font/lato_bold"-->
+<!--                        android:layout_marginTop="@dimen/dimen_16sp"-->
+<!--                        android:layout_below="@+id/nextdelivery"-->
+<!--                        android:textSize="@dimen/dimen_12dp"/>-->
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_40dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:layout_below="@id/nextdelivery"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:src="@mipmap/aceptedicon"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reject"
+                        android:textColor="@color/dark_gray"
+                        android:fontFamily="@font/lato_bold"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:layout_marginLeft="@dimen/dimen_8dp"
+                        android:layout_below="@+id/nextdelivery"
+                        android:textSize="@dimen/dimen_12dp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_15dp"
+                        android:layout_height="@dimen/dimen_15dp"
+                        android:layout_below="@id/nextdelivery"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:src="@mipmap/croseicon"
+                        android:layout_marginTop="22dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/order_ll"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_12dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_25sp"
+                            android:layout_height="@dimen/dimen_25sp"
+                            android:src="@mipmap/pending" />
+                        <View
+                            android:layout_width="@dimen/dimen_50dp"
+                            android:layout_height="@dimen/dimen_5dp"
+                            android:layout_gravity="center"
+                            android:background="@color/dark_gray" />
+                        <ImageView
+                            android:layout_width="@dimen/dimen_25sp"
+                            android:layout_height="@dimen/dimen_25sp"
+                            android:src="@mipmap/completed" />
+                        <View
+                            android:layout_width="@dimen/dimen_50dp"
+                            android:layout_height="@dimen/dimen_5dp"
+                            android:layout_gravity="center"
+                            android:background="@color/dark_gray" />
+                        <ImageView
+                            android:layout_width="@dimen/dimen_25sp"
+                            android:layout_height="@dimen/dimen_25sp"
+                            android:src="@mipmap/completed" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pending"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:textColor="@color/red_light"
+                            android:fontFamily="@font/lato_regular"
+                            android:layout_marginLeft="@dimen/dimen_1dp"
+                            android:gravity="left"
+                            android:textSize="9sp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Confirmed"
+                            android:gravity="center"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/dark_gray"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:layout_marginLeft="@dimen/dimen_2dp"
+                            android:textSize="9sp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:gravity="right"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="Completed"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="9sp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:id="@+id/side_navigationbar"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:src="@mipmap/sidebaricon"/>
+        <LinearLayout
+            android:id="@+id/appLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_60sp"
+                android:textSize="@dimen/dimen_25sp"
+                android:layout_gravity="center"
+                android:src="@mipmap/guideiconhome"/>
+        </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80dp"
+        android:id="@+id/bottomnavigation"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/item_menu"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@drawable/tabcolor"
+        android:background="@drawable/bottam_nabivation_background"
+        app:itemTextColor="@drawable/tabcolor"
+        app:labelVisibilityMode="labeled"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+</RelativeLayout>
+</RelativeLayout>

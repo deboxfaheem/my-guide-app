@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_10dp"
+    android:layout_marginEnd="@dimen/dimen_10dp"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:background="@drawable/recycleralertbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:paddingTop="@dimen/dimen_2dp"
+        android:paddingBottom="@dimen/dimen_2dp"
+        android:weightSum="3.5">
+
+        <ImageView
+            android:id="@+id/imageicon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:src="@mipmap/alertsdark"
+            android:contentDescription="@string/app_name" />
+        <RelativeLayout
+            android:id="@+id/layout_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="2.7"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Denim Shirt"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="@dimen/dimen_13sp"/>
+            <TextView
+                android:id="@+id/itemtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 minutes ago"
+                android:layout_below="@+id/itemName"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="11dp" />
+            <TextView
+                android:id="@+id/delivery"
+                android:layout_width="@dimen/dimen_75dp"
+                android:layout_height="wrap_content"
+                android:text="Delivery"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:padding="@dimen/dimen_7sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:layout_toEndOf="@+id/itemtime"
+                android:background="@drawable/deliverborder"
+                android:layout_marginLeft="@dimen/dimen_50dp"
+                android:textSize="@dimen/dimen_12dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/arrowblack"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

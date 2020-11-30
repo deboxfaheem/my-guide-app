@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:padding="@dimen/dimen_10dp"
+        android:background="@drawable/panding_backgroundshadow"
+        android:id="@+id/relativelayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taj Mahal - Agra Fort"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp"
+            android:fontFamily="@font/lato_bold"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:id="@+id/tourcity"/>
+        <ImageView
+            android:layout_width="@dimen/dimen_10dp"
+            android:layout_height="@dimen/dimen_10dp"
+            android:id="@+id/roundt"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_below="@+id/tourcity"
+            android:src="@mipmap/usericon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travelers: 15"
+            android:id="@+id/travelrs"
+            android:fontFamily="@font/lato_regular"
+            android:layout_below="@+id/tourcity"
+            android:layout_marginTop="@dimen/dimen_7sp"
+            android:textSize="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_toEndOf="@+id/roundt"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/dimen_10dp"
+            android:layout_height="@dimen/dimen_10dp"
+            android:id="@+id/calender"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_below="@+id/travelrs"
+            android:src="@mipmap/micicon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tour Starts: 07:00 am 30-11-2020\nThe Oberoi Amarvilas Lobby, Taj East Gate Rd, Paktola, Tajganj, Agra"
+            android:textSize="@dimen/dimen_10dp"
+            android:layout_below="@+id/travelrs"
+            android:id="@+id/tourstarts"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginTop="@dimen/dimen_7sp"
+            android:layout_toEndOf="@+id/calender"
+            android:layout_marginLeft="@dimen/dimen_10dp"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/dimen_10dp"
+            android:layout_height="@dimen/dimen_10dp"
+            android:id="@+id/userss"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_below="@+id/tourstarts"
+            android:src="@mipmap/flag"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tour Ends: 05:00 pm 31-11-2020\nMankameshwar Temple, Sheb Bazar,Mantola, Agra"
+            android:textSize="@dimen/dimen_10dp"
+            android:id="@+id/tourends"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_below="@+id/tourstarts"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_toEndOf="@+id/userss"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_7sp"
+            android:layout_below="@+id/tourcity"
+            android:id="@+id/adress_ll"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_10dp"
+                android:layout_height="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:src="@mipmap/language"/>
+            <TextView
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="wrap_content"
+                android:text="Language: French"
+                android:id="@+id/language"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:textSize="@dimen/dimen_10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/acepted_allicon"
+            android:layout_below="@id/tourstarts"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25sp"
+                android:id="@+id/backarrow"
+                android:src="@mipmap/arrowicon"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tourends"
+            android:layout_marginRight="@dimen/dimen_12dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_5dp">
+            <LinearLayout
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_below="@id/nextdelivery"
+                    android:src="@mipmap/completed_compress_grapic"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/dimen_13sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_ll"
+            android:layout_below="@id/tourends"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_25sp"
+                    android:layout_height="@dimen/dimen_25sp"
+                    android:src="@mipmap/pending" />
+                <View
+                    android:layout_width="@dimen/dimen_50dp"
+                    android:layout_height="@dimen/dimen_5dp"
+                    android:layout_gravity="center"
+                    android:background="@color/red_light" />
+                <ImageView
+                    android:layout_width="@dimen/dimen_25sp"
+                    android:layout_height="@dimen/dimen_25sp"
+                    android:src="@mipmap/rightcompletdicon" />
+                <View
+                    android:layout_width="@dimen/dimen_50dp"
+                    android:layout_height="@dimen/dimen_5dp"
+                    android:layout_gravity="center"
+                    android:background="@color/red_light" />
+                <ImageView
+                    android:layout_width="@dimen/dimen_25sp"
+                    android:layout_height="@dimen/dimen_25sp"
+                    android:src="@mipmap/fragcompleted" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:textColor="@color/red_light"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:gravity="left"
+                    android:textSize="9sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmed"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@color/red_light"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:textSize="9sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:gravity="right"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:text="Completed"
+                    android:textColor="@color/red_light"
+                    android:textSize="9sp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
