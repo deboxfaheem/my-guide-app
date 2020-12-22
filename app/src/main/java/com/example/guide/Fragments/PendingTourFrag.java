@@ -16,13 +16,13 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class PendingDutieFrag extends Fragment {
+public class PendingTourFrag extends Fragment {
 
     PendingDutiesAdapter pendingAdapter;
     RecyclerView m_rec_pen;
     private NavigationView sidebarnavigation;
     ArrayList<Pending> pendingduties;
-    public PendingDutieFrag() {
+    public PendingTourFrag() {
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {

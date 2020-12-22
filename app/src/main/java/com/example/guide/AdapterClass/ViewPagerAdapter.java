@@ -6,9 +6,9 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.guide.Fragments.AlertFrag;
 import com.example.guide.Fragments.ClientFrag;
-import com.example.guide.Fragments.CompletedDutiesFrag;
+import com.example.guide.Fragments.CompletedTourFrag;
 import com.example.guide.Fragments.Homefragment;
-import com.example.guide.Fragments.PendingDutieFrag;
+import com.example.guide.Fragments.PendingTourFrag;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
@@ -22,9 +22,9 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return new Homefragment();
             case 1:
-                return new PendingDutieFrag();
+                return new PendingTourFrag();
             case 2:
-                return new CompletedDutiesFrag();
+                return new CompletedTourFrag();
             case 3:
                 return new AlertFrag();
             case 4:

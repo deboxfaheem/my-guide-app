@@ -13,13 +13,13 @@ import com.example.guide.Model.Pending;
 import com.example.guide.R;
 import com.google.android.material.navigation.NavigationView;
 import java.util.ArrayList;
-public class CompletedDutiesFrag extends Fragment {
+public class CompletedTourFrag extends Fragment {
 
   CompletedDutiesAdapter completedDutiesAdapter;
     RecyclerView m_rec_pen;
     ArrayList<Pending> Completedduties;
     private NavigationView sidebarnavigation;
-    public CompletedDutiesFrag() {
+    public CompletedTourFrag() {
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {

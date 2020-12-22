@@ -5,19 +5,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/sidenav_home"
             android:icon="@mipmap/bottnav_homicon"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/sidenav_pening"
             android:icon="@mipmap/pendingturs"
             android:title="@string/menu_pending" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/sidenav_completed"
             android:icon="@mipmap/completedtursicon"
             android:title="@string/menu_completed" />
         <item
-            android:id="@+id/nav_tools"
+            android:id="@+id/sidenav_alert"
             android:icon="@mipmap/alertsicon"
             android:title="@string/menu_alerts" />
     </group>
@@ -25,11 +25,11 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/sidenav_clint"
                 android:icon="@mipmap/usericon"
                 android:title="@string/menu_client" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/sidenav_logout"
                 android:icon="@drawable/ic_error_outline_black_24dp"
                 android:title="@string/menu_logout" />
         </menu>
